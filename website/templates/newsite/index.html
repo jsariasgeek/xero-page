@@ -38,6 +38,7 @@
 
 <body data-spy="scroll" data-target=".navbar-custom" class="page-scroll">
 
+
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom navbar-fixed-top-principal" role="navigation">
   <div class="container">
     <div class="navbar-header page-scroll">
@@ -138,16 +139,22 @@
             </ul>
           </div>
           <div class="col-md-4">
-              <div class="page-header first-slide">
+              <div id='captions'class="page-header first-slide">
                 
-                <ul id="eventostwo" class="bxslider" style="margin:0px; padding:0px;">
-                  <li class="text-center"><h1 class="text-center">¿Y TU, YA CONOCES <br> <span class="text-150">EL PUNTO XERO?</span></h1>
+                <ul id="eventostwo" class="bxslider" style="margin:0px; padding:0px; width:120%;">
+                  <li class="text-center">
+                    <h1 class="text-center">¿Y TU, YA CONOCES <br> <span class="text-150">EL PUNTO XERO?</span>
+                    </h1>
                     <a href="#quienes-somos" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
-                  <li class="text-center"><h1 class="text-center">DESARROLLO WEB CON LAS<br> <span class="text-110">MAS ALTAS TECNOLOGIAS</span></h1>
+                  <li class="text-center">
+                    <h1 class="text-center">DESARROLLO WEB CON LAS<br> <span class="text-110">MAS ALTAS TECNOLOGIAS</span>
+                    </h1>
                     <a href="#quehacemos" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
-                  <li class="text-center"><h1 class="text-center">CREAMOS<br> <span class="text-150">CONCEPTOS</span></h1>
+                  <li class="text-center conceptos">
+                    <h1 class="text-center">CREAMOS<br> <span class="text-150">CONCEPTOS&nbsp;&nbsp;</span>
+                    </h1>
                     <a href="#muestras-portafolio" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
                 </ul>
@@ -793,15 +800,20 @@
        </div>
      </section> 
 
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-
-<script src="{% static 'js/blueimp-gallery.min.js' %}"></script>
+<script src="{% static 'js/blueimp-gallery.min.js' %}"></script>  
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="{% static 'js/scroll.js' %}"></script>
-<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
 <script src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+  
+
+
+
 
 
   <script>
@@ -901,6 +913,7 @@ dlContent={dom:[]};
 
 
 
+
 <script>
   document.getElementById('links').onclick = function (event) {
   event = event || window.event;
@@ -958,9 +971,22 @@ dlContent={dom:[]};
       );
     });
 
+    $(document).ready(function(){
+      $('#captions .bx-viewport').css({
+        'overflow':'visible',
+      }
+
+        )
+    });
+
+
+
     
 
   </script>
+
+
+
 
 
 </body>
