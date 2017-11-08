@@ -9,6 +9,7 @@ django-appconf==1.0.2
 django-imagekit==4.0.1
 django-storages==1.6.5
 docutils==0.14
+gunicorn==19.7.1
 jmespath==0.9.3
 olefile==0.44
 pilkit==2.0
