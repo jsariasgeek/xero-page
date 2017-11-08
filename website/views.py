@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 from django.core.mail import EmailMessage
 from django.db import IntegrityError
+from django.shortcuts import redirect
 
 from website.models import *
 from website.forms import *
@@ -14,21 +15,31 @@ def home(request):
 	form = FormularioContacto()
 	proyectoDesorder = Proyecto.objects.all()
 	proyecto = proyectoDesorder.order_by('-fecha_registro')
-	return render_to_response('newsite/index.html', dict(form = form, proyecto=proyecto), context_instance=RequestContext(request))
+
+	context = {
+		'form':form, 
+		'proyecto':proyecto,
+
+	}
+
+	return render(request, 'newsite/index.html',  context)
 
 def contacto(request):
 	if request.method == 'POST': # Si el formulario es enviado
 		form = FormularioContacto(request.POST)		
 		if form.is_valid(): # Si es válido se procesan los datos
-			nombres = form.cleaned_data['nombre']
-			apellidos = form.cleaned_data['apellidos']
-			email = form.cleaned_data['email']
-			celular = form.cleaned_data['celular']
-			mensajeUsuario = form.cleaned_data['mensaje']					
+
+			nombre = request.POST.get('nombre')
+			apellidos = request.POST.get('apellidos')
+			email = request.POST.get('email')
+			celular = request.POST.get('celular')
+			mensajeUsuario = request.POST.get('mensaje')
+			print(nombre,apellidos,email)
+
 			subject = 'Te han dejado un mensaje en la web'
-			message = nombres + ' ' + apellidos + ' con el email ' + email + ' y celular ' + celular + ' te ha dejado el siguiente mensaje en la web:  ' + mensajeUsuario
+			message = nombre + ' ' + apellidos + ' con el email ' + email + ' y celular ' + celular + ' te ha dejado el siguiente mensaje en la web:  ' + mensajeUsuario
 			# Enviamos el mensaje
-			mail = EmailMessage(subject, message, to=['jsarias1993@gmail.com'])
+			mail = EmailMessage(subject, message, to=['jsarias0514@gmail.com'])
 			mail.send()
 
 			# Guardamos los datos del usuario
@@ -39,12 +50,13 @@ def contacto(request):
 			userMessage.celular = form.cleaned_data['celular']
 
 			
-			# Guardamos el Mensaje
+			#Guardamos el Mensaje
 
 			# Guardamos el usuario
 			try:
 				userMessage.save()
 				userMessage.mensaje_set.create(mensaje=mensajeUsuario)
+				print('Guarde el Usuario y El mensaje')
 				# return redirect('/mensajeenviado')
 				return HttpResponse("Tu mensaje se ha enviado correctamente. Pronto te contactaremos.")
 
@@ -55,10 +67,13 @@ def contacto(request):
 				messageUser.usuario = UserHistorico
 				messageUser.mensaje = mensajeUsuario
 				messageUser.save()
-				# return redirect('/mensajeenviado')
+				print('Guarde el Mensaje')
 				return HttpResponse("Tu mensaje se ha enviado correctamente. Pronto te contactaremos.")
+		
+			return HttpResponse("Tu mensaje se ha enviado correctamente. Pronto te contactaremos.")
+
+		else:
+			return HttpResponse('Se ha Presentado un Error')
 			
 	else:
-		form = FormularioContacto() # An unbound form
-
-	return render_to_response('index.html', dict(form=form), context_instance=RequestContext(request))
+		return redirect('/')

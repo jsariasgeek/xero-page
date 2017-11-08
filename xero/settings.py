@@ -21,10 +21,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9bsj_bpq^a!9z^!i7t4a_zhb+c%%i@ygr=@3ant%j&1nk8*6$l'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = socket.gethostname() == 'MacBook-Pro-de-Johan.local'
+DEBUG = socket.gethostname() == 'iMac-de-Yohan.local'
 
 ALLOWED_HOSTS = ['*']
 ADMINS = (('Yohan Estiven Arias', 'jsarias0514@gmail.com'), )
@@ -81,22 +81,19 @@ WSGI_APPLICATION = 'xero.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 
-if DEBUG:
-    DATABASES = {
-            'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'xero',
-            'USER':'postgres',
-            'PASSWORD':os.environ['pass_db'],
-            'HOST':'localhost',
-            'PORT':'5433',
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-else:
+}
+    
+if not DEBUG:
     import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.config()
-    }
+    db_from_env = dj_database_url.config()
+    DATABASES['default'].update(db_from_env)
+    DATABASES['default']['CONN_MAX_AGE'] = 500
+
 
 
 # Internationalization
@@ -129,18 +126,27 @@ AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
         'Cache-Control': 'max-age=94608000',
     }
 
-AWS_STORAGE_BUCKET_NAME = 'xeroagency'
-AWS_ACCESS_KEY_ID = os.environ['s3_key_id']
-AWS_SECRET_ACCESS_KEY = os.environ['s3_access_key']
+AWS_STORAGE_BUCKET_NAME = 'xero-page'
+AWS_S3_REGION_NAME = 'sa-east-1'  # e.g. us-east-2
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-STATIC_URL = "https://%s/" %AWS_S3_CUSTOM_DOMAIN
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+STATIC_URL = '/static/'
+STATICFILES_LOCATION = 'static'
+
+if not DEBUG:
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+MEDIAFILES_LOCATION = 'media'
+
+
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 #email
 
-EMAIL_HOST = os.environ['email_host']
-EMAIL_HOST_USER = os.environ['email_host_user']
-EMAIL_HOST_PASSWORD = os.environ['email_host_password']
-EMAIL_PORT = int(os.environ['email_port'])
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = '587'
 EMAIL_USE_TLS = True

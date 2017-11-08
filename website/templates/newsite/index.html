@@ -1,36 +1,56 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <meta name="description" content="Diseño y Desarrollo de Sitios Web en Pereira y Eje Cafetero. Gestionamos su publidad en web o medios Impresos.Somos Expertos en conectar medios Digitales e Impresos para generar publicidad de alto impacto e ideas que vendan.">
-  <meta name="author" content="XERO AGENCY">
 
-  <title>XERO AGENCY &#124; Diseño &#124; Marketing &#124; BTL</title>
+  <meta name="author" content="Johan Steven Arias V">
+
+
+
+  <title>XERO CREATIVIDAD &#124; Diseño &#124; Marketing &#124; BTL</title>
+
 
   <!-- Favicon-->
 
-  <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-  <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static '/favicon.ico' %}" type="image/x-icon">
+
+  <link rel="icon" href="{% static '/favicon.ico' %}" type="image/x-icon">
+
 
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
   <link rel="stylesheet" href="{% static 'css/xero.css' %}">
 
+
+
   <!-- Fonts -->
+
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+
+
   <!-- Bootstrap Image Gallery -->
+
   <link rel="stylesheet" href="{% static 'css/blueimp-gallery.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}">
 
   <style>
         .edgeLoad-EDGE-38250192 { visibility:hidden; }
-  </style>
+    </style>
+
+  
+
+    
+  
 
 </head>
 
@@ -39,29 +59,57 @@
 <body data-spy="scroll" data-target=".navbar-custom" class="page-scroll">
 
 
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom navbar-fixed-top-principal" role="navigation">
-  <div class="container">
-    <div class="navbar-header page-scroll">
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom navbar-fixed-top-principal" role="navigation">
+
+    <div class="container">
+
+      <div class="navbar-header page-scroll">
+
+
+
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+
         <span class="sr-only">Toggle navigation</span>
+
         <span class="icon-bar"></span>
+
         <span class="icon-bar"></span>
+
         <span class="icon-bar"></span>
+
       </button>        
 
-      <li class="page-scroll" style="list-style:none;">
-        <a class="navbar-brand" href="#intro-home">         
-        <img class="img-responsive hidden-xs hidden-sm" src="{% static 'img/logo-xero.svg' %}" alt="Logo">          
-          <img class="img-responsive hidden-xs hidden-md hidden-lg" src="{% static 'img/logo-xero-sm.png' %}" alt="Logo">         
-          <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{% static 'img/logo-xero-xs.svg' %}" alt="Logo">  
-        </a>
-      </li> 
+        <li class="page-scroll" style="list-style:none;"><a class="navbar-brand" href="#intro-home">
+         
+                   <img class="img-responsive hidden-xs hidden-sm" src="{% static 'img/logo-xero-lg.png' %}" alt="Logo">
+         
+                 <!-- 
+         
+                   <img class="img-responsive hidden-xs hidden-sm hidden-md" src="img/logo-xero-lg.png" alt="Logo">
+         
+                   <img class="img-responsive hidden-xs hidden-sm hidden-lg" src="img/logo-xero-md.png" alt="Logo">
+         
+                   <img class="img-responsive hidden-xs hidden-md hidden-lg" src="img/logo-xero-sm.png" alt="Logo">          
+         
+                  -->
+         
+         
+         
+                 <img class="img-responsive hidden-xs hidden-md hidden-lg" src="{% static 'img/logo-xero-sm.png' %}" alt="Logo">
+         
+                 <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{% static 'img/logo-xero-xs.svg' %}" alt="Logo">
+         
+         
+         
+                 </a></li> 
 
-    </div>
+      </div>
 
 
 
       <div class="collapse navbar-collapse navbar-ex1-collapse">
+
         <ul class="nav navbar-nav navbar-right hidden-sm">
 
           <li class="hidden">
@@ -139,22 +187,16 @@
             </ul>
           </div>
           <div class="col-md-4">
-              <div id='captions'class="page-header first-slide">
+              <div class="page-header first-slide">
                 
-                <ul id="eventostwo" class="bxslider" style="margin:0px; padding:0px; width:120%;">
-                  <li class="text-center">
-                    <h1 class="text-center">¿Y TU, YA CONOCES <br> <span class="text-150">EL PUNTO XERO?</span>
-                    </h1>
+                <ul id="eventostwo" class="bxslider" style="margin:0px; padding:0px;">
+                  <li class="text-center"><h1 class="text-center">¿Y TU, YA CONOCES <br> <span class="text-150">EL PUNTO XERO?</span></h1>
                     <a href="#quienes-somos" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
-                  <li class="text-center">
-                    <h1 class="text-center">DESARROLLO WEB CON LAS<br> <span class="text-110">MAS ALTAS TECNOLOGIAS</span>
-                    </h1>
+                  <li class="text-center"><h1 class="text-center">DESARROLLO WEB CON LAS<br> <span class="text-110">MAS ALTAS TECNOLOGIAS</span></h1>
                     <a href="#quehacemos" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
-                  <li class="text-center conceptos">
-                    <h1 class="text-center">CREAMOS<br> <span class="text-150">CONCEPTOS&nbsp;&nbsp;</span>
-                    </h1>
+                  <li class="text-center"><h1 class="text-center" style="overflow: visible;">CREAMOS<br> <span class="text-150">CONCEPTOS</span></h1>
                     <a href="#muestras-portafolio" class="btn btn-primary btn-large enlace-home">&nbsp;&nbsp;VER M&Aacute;S &nbsp;&nbsp;</a>
                   </li>
                 </ul>
@@ -170,7 +212,7 @@
      
     </div>
     
-  <br>
+  <br class="hidden-promedio">
   <br class="hidden-promedio">
   <br class="hidden-promedio">
   <br class="hidden-promedio">
@@ -294,19 +336,19 @@
           <div id="tabs" class="col-md-10">
             <ul class="nav nav-tabs text-center" id="ul-portafolio">
   
-                <li class="col-md-4 col-sm-4 col-xs-12">
+                <li class="active col-md-4 col-sm-4 col-xs-12">
                   <a href="#diseno" data-toggle="diseno">
-                    <h2 id="h2diseno">DISE&Ntilde;O WEB</h2>
+                    <h2 id="h2diseno"  class="portfolio-menu" onclick="activadiseno()">DISE&Ntilde;O WEB</h2>
                   </a>
                 </li>          
                 <li class="col-md-4 col-sm-4 col-xs-12">
                   <a href="#marketing" data-toggle="marketing">
-                    <h2 id="h2marketing">MARKETING DIGITAL</h2>
+                    <h2 id="h2marketing" class="portfolio-menu" onclick="activamarketing()">MARKETING DIGITAL</h2>
                   </a>
                 </li>            
-                <li id="diseno" class="col-md-4 col-sm-4 col-xs-12">
+                <li class="col-md-4 col-sm-4 col-xs-12">
                   <a href="#imagen" data-toggle="imagen">
-                    <h2 id="h2imagen">IMAGEN E IMPRESION</h2>
+                    <h2 id="h2imagen" class="portfolio-menu" onclick="activaimagen()">IMAGEN E IMPRESION</h2>
                   </a>
                 </li>                       
             </ul>
@@ -317,7 +359,7 @@
     </div>
       <br>
           
-      <div class="row"> 
+      <div id="diseno" class="row"> 
           <div class="container">
             <div class="col-md-12">
               <div class="col-md-7">
@@ -345,7 +387,7 @@
                     <td>&nbsp;&nbsp;Desarrollo de Aplicaciones Web</td>                     
                   </tr>
 
-                  <tr id="marketing">
+                  <tr>
                     <td><img src="{% static 'img/list-style-xero.svg' %}" alt="Lista-Elementos"></td>
                     <td>&nbsp;&nbsp;Implementaci&oacute;n de la plataforma corporativa de Google Apps</td>                     
                   </tr>
@@ -353,7 +395,7 @@
 
                 
               </div>
-              <div class="col-md-5 hidden-sm hidden-xs">
+              <div class="col-md-5">
                 <br>
                 
                 <img class="img-responsive" src="{% static 'img/elementos-web.png' %}" alt="Elementos Web">
@@ -364,17 +406,17 @@
 
       <br>
       
-        <div class="row "> 
+        <div id="marketing" class="row "> 
             <div class="container">
               <div class="col-md-12 marketing">
-                <div class="col-md-6 hidden-sm hidden-xs">
+                <div class="col-md-6">
                   <br>
                   
                   
                 </div>
                 <div class="col-md-6">
-                       <br class="hidden-sm hidden-xs">
-                       <br class="hidden-sm hidden-xs">
+                       <br>
+                       <br>
                   <h2 class="great-ideas">MARKETING DIGITAL</h2>
                   <p>
                     <span class="marca">XERO CREATIVIDAD</span> cuenta con un portafolio integral enfocado en ayudarle a las empresas a crear, mantener y optimizar las relaciones con sus clientes.
@@ -394,7 +436,7 @@
                       <td>&nbsp;&nbsp;Inbound Marketing <small>Publicidad en Videos, Podcasts, E-books, Whitepapers, Themes.</small></td>                      
                     </tr>
   
-                    <tr id="imagen"> 
+                    <tr>
                       <td><img src="{% static 'img/list-style-xero.svg' %}" alt="Lista-Elementos"></td>
                       <td>&nbsp;&nbsp;Campañas Publicitarias en Facebook</td>                     
                     </tr>
@@ -402,10 +444,10 @@
                     
                   </table>
   
-                  <br class="hidden-sm hidden-xs">
-                  <br class="hidden-sm hidden-xs">
-                  <br class="hidden-sm hidden-xs">
-                  <br class="hidden-sm hidden-xs">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
   
                   
                 </div>
@@ -417,11 +459,11 @@
        
   
   
-        <div class="row"> 
+        <div id="imagen" class="row"> 
             <div class="container">
               <div class="col-md-12 btl-xero">
                 <div class="col-md-7">                                       
-                  <h2 class="great-ideas">IMAGEN E IMPRESI&Oacute;N</h2>
+                  <h2 class="great-ideas">DISE&Ntilde;O E IMPRESI&Oacute;N</h2>
                   <p>
                     Contamos con servicios eficientes donde su empresa puede encontrar una soluci&oacute;n integral a cada requerimiento publicitario, con el respaldo de personal experto en distintas &aacute;reas generamos ideas de alto impaco, ideas frescas y los m&aacute;s importante: <br>
                   </p>
@@ -543,7 +585,7 @@
 
                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 col-portafolio">                     
 
-                  <a href="{% static 'originales/minicarrusel-01.jpg' %}">
+                  <a href="originales/minicarrusel-01.jpg">
 
                       <img class="img-responsive thumbs-portafolio animation-1" src="{% static 'portafolio/minicarrusel-01.jpg' %}">
 
@@ -555,7 +597,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-portafolio hidden-xs">      
 
-                  <a href="{% static 'originales/minicarrusel-02.jpg' %}">
+                  <a href="originales/minicarrusel-02.jpg">
 
                     <img class="img-responsive thumbs-portafolio animation-2" src="{% static 'portafolio/minicarrusel-02.jpg' %}">
 
@@ -567,7 +609,7 @@
 
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 col-portafolio hidden-sm hidden-xs" >         
 
-                  <a href="{% static 'originales/minicarrusel-03.jpg' %}">
+                  <a href="originales/minicarrusel-03.jpg">
 
                     <img class="img-responsive thumbs-portafolio animation-3" src="{% static 'portafolio/minicarrusel-03.jpg' %}">
 
@@ -593,7 +635,7 @@
 
               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-portafolio">      
 
-                <a href="{% static 'originales/minicarrusel-11.jpg' %}">
+                <a href="originales/minicarrusel-11.jpg">
 
                   <img class="img-responsive thumbs-portafolio animation-3" src="{% static 'portafolio/minicarrusel-04.jpg' %}">
 
@@ -605,9 +647,9 @@
 
               <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-portafolio hidden-xs-2">   
 
-                <a href="{% static 'originales/minicarrusel-05.jpg' %}">
+                <a href="originales/minicarrusel-05.jpg">
 
-                  <img class="img-responsive thumbs-portafolio animation-2" src="{% static 'portafolio/minicarrusel-05.jpg' %}">
+                  <img class="{% static 'img-responsive thumbs-portafolio animation-2" src="portafolio/minicarrusel-05.jpg' %}">
 
                 </a>                                         
 
@@ -631,7 +673,7 @@
 
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-portafolio">                     
 
-                  <a href="{% static 'originales/minicarrusel-04.jpg' %}">
+                  <a href="originales/minicarrusel-04.jpg">
 
                     <img class="img-responsive thumbs-portafolio animation-1" src="{% static 'portafolio/minicarrusel-06.jpg' %}">
 
@@ -645,7 +687,7 @@
 
                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-portafolio">         
 
-                  <a href="{% static 'originales/minicarrusel-09.jpg' %}">
+                  <a href="originales/minicarrusel-09.jpg">
 
                     <img class="img-responsive thumbs-portafolio animation-1" src="{% static 'portafolio/minicarrusel-09.jpg' %}">
 
@@ -657,7 +699,7 @@
 
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-portafolio">                       
 
-                  <a href="{% static 'originales/minicarrusel-10.jpg' %}">
+                  <a href="originales/minicarrusel-10.jpg">
 
                     <img class="img-responsive thumbs-portafolio animation-2" src="{% static 'portafolio/minicarrusel-10.jpg' %}">
 
@@ -719,69 +761,46 @@
            <div class="col-md-1"></div>
            <div class="col-md-4">
              <br>
-             <div class="col-md-12">
-               <img class="img-responsive" style="margin:auto;" src="{% static 'img/contacto-xero-decoration.png' %}" alt="Contacto XERO">
-             </div>
-             <div class="col-md-12">
-              <br>
-               <div class="col-md-12"><h2 class="text-center">CONTACTO COMERCIAL</h2></div>
-               <div class="col-md-6 text-151 text-center"> 
-                  Nelson Romero <br>               
-                 <span class="glyphicon glyphicon-phone"></span> 314 672 16 61
-               </div>
-               <div class="col-md-6 text-151 text-center">
-                 Johan Steven Arias <br>               
-                 <span class="glyphicon glyphicon-phone"></span> 321 785 24 06
-               </div>
-               <div class="col-md-12 text-151 text-center">conctacto@xerocreatividad.com</div>
-             </div>             
+             <img class="img-responsive" src="{% static 'img/contacto-xero-decoration.png' %}" alt="Contacto XERO">
            </div>           
-           <div id="loadResponse" class="col-md-6">
+           <div id="js_load_response" class="col-md-6">
              <br>
              <br>
-             <form id="contactoPage" class="form-horizontal" name="formcontacto" role="form" action="/contacto/" method="post">
-              {% csrf_token %}
-              {{ form.non_field_errors }} 
-               <div class="form-group">
-                {{ form.nombre.errors }}          
-                 <label for="nombre" class="col-md-4 col-sm-2 control-label">NOMBRES</label>
-                 <div class="col-md-8 col-sm-10">
-                   <!-- <input type="text" class="form-control"  required="required" style="font-size: 120%;" id="inputEmail3" placeholder="ESCRIBE TU NOMBRE"> -->
-                   {{ form.nombre }}
+            
+            
 
+
+             <form id="js_contacto_page" class="form-horizontal" role="form" action="{% url 'contacto' %}" method="POST">
+              {% csrf_token %}
+               <div class="form-group">
+                 <label for="inputEmail3" class="col-md-4 col-sm-2 control-label">NOMBRES</label>
+                 <div class="col-md-8 col-sm-10">
+                   <input name="nombre" type="text" class="form-control"  required="required" style="font-size: 120%;" id="inputEmail3" placeholder="ESCRIBE TU NOMBRE">
                  </div>
                </div>
                <div class="form-group">
-                 <label for="apellidos" class="col-md-4 col-sm-2 control-label">APELLIDOS</label>
+                 <label for="inputEmail3" class="col-md-4 col-sm-2 control-label">APELLIDOS</label>
                  <div class="col-md-8 col-sm-10">
-                  {{ form.apellidos.error }}
-                   <!-- <input type="text" class="form-control"  required="required" style="font-size: 120%;" id="inputEmail3" placeholder="ESCRIBE TUS APELLIDOS"> -->
-                  {{ form.apellidos }}
+                   <input name="apellidos" type="text" class="form-control"  required="required" style="font-size: 120%;" id="inputEmail3" placeholder="ESCRIBE TUS APELLIDOS">
                  </div>
                </div>
                <div class="form-group">
-                {{ form.email.error }}
-                 <label for="email" class="col-md-4 col-sm-2 control-label">EMAIL</label>
+                 <label for="inputPassword3" class="col-md-4 col-sm-2 control-label">EMAIL</label>
                  <div class="col-md-8 col-sm-10">
-                   {{ form.email }}
-                   <!-- <input type="email" class="form-control"  required="required" style="font-size: 120%;" id="inputPassword3" placeholder="ESCRIBE TU EMAIL"> -->
+                   <input name="email" type="email" class="form-control"  required="required" style="font-size: 120%;" id="inputPassword3" placeholder="ESCRIBE TU EMAIL">
                  </div>
                </div>
                <div class="form-group">
-                  {{ form.celular.error }}
-                 <label for="celular" class="col-md-4 col-sm-2 control-label">CELULAR</label>
+                 <label for="inputPassword3" class="col-md-4 col-sm-2 control-label">CELULAR</label>
                  <div class="col-md-8 col-sm-10">
-                   {{ form.celular }}
-                   <!-- <input type="email" class="form-control"  required="required" style="font-size: 120%;" id="inputPassword3" placeholder="ESCRIBE TU NUMERO DE CELULAR"> -->
+                   <input name="celular" type="text" class="form-control"  required="required" style="font-size: 120%;" id="inputPassword3" placeholder="ESCRIBE TU NUMERO DE CELULAR">
                  </div>
                </div>
      
                <div class="form-group">
-                {{ form.mensaje.error }}
-                 <label for="mensaje"  class="col-md-4 col-sm-2 control-label">TU MENSAJE</label>
+                 <label for="inputPassword3"  class="col-md-4 col-sm-2 control-label">TU MENSAJE</label>
                  <div class="col-md-8 col-sm-10">
-                   {{ form.mensaje }}
-                   <!-- <textarea class="form-control" required="required" style="font-size: 120%;" rows="5"></textarea> -->
+                   <textarea name="mensaje" class="form-control" required="required" style="font-size: 120%;" rows="5"></textarea>
                  </div>
                </div>
                
@@ -792,6 +811,8 @@
                  </div>
                </div>
              </form>
+
+
              <br>
              <br>
            </div>
@@ -800,117 +821,17 @@
        </div>
      </section> 
 
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-
-<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/blueimp-gallery.min.js' %}"></script>  
+<script src="{% static 'js/blueimp-gallery.min.js' %}"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="{% static 'js/scroll.js' %}"></script>
-<script src="http://fgnass.github.io/spin.js/spin.min.js"></script>
-  
+<!-- <script type="text/javascript" charset="utf-8" src="{% static 'js/animate.js' %}"></script>
+ --><script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
 
-
-
-
-
-  <script>
-    $(document).on('ready', function(){
-      $('input').attr('required', 'required');
-      var attrMensaje = {
-        'rows': '4',
-        'cols': '1',
-      }
-
-      $('#id_mensaje').attr(attrMensaje);
-    /*  var emailField = $('input').attr('type', 'required').id;*/
-
-
-      $('#contactoPage input').addClass('form-control')
-
-    });
-  </script>
-
-  <script>
-
-    $(document).on('ready', function(){
-
-      var pet = $('#contactoPage').attr('action')
-      console.log(pet)
-      var met = $('#contactoPage').attr('method')
-      console.log(met)
-      $('#contactoPage').on('submit', function(e){
-
-        e.preventDefault()
-
-        $.ajax({
-          beforeSend: function(){
-            var opts = {
-              radius:10,
-              width:10,
-              height:10,
-              lenght:10,
-            }
-            var target = document.getElementById('loadResponse')
-            var spinner = new Spinner(opts).spin(target)
-          
-
-          },
-          url: pet,
-          type: met,
-          data: $('#contactoPage').serialize(), 
-          success: function(resp){
-            $('#loadResponse').html('<img class="img-responsive" style="max-height:100%; margin:auto;" src="{% static "img/ok.png" %}">')
-            $('#loadResponse').append('<h2>'+resp+'</h2>')
-
-            console.log(resp)
-          }, 
-          error: function(jqXHR, estado, error){
-            $('#loadResponse').html('<img class="img-responsive" style="max-height:100%;" src="{% static "img/x.png" %}">')
-            console.log(error)
-            document.write(error)
-          },
-          complete: function(jqXHR, estado){
-            console.log(estado)
-          },
-          timeout: 10000    
-      })
-
-
-      })
-    })
-
-
-  </script>
-<script>
-  
-window.AdobeEdge=window.AdobeEdge||{};
-if(!AdobeEdge.yepnope){(function(a,b,c){function d(a)
-  {return"[object Function]"==o.call(a)}function e(a)
-  {return"string"==typeof a}function f(){}function g(a)
-  {return!a||"loaded"==a||"complete"==a||"uninitialized"==a}
-  function h(){var a=p.shift();q=1,a?a.t?m(function()
-    {("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);AdobeEdge.yepnope=window.yepnope;}
-(function(compId){var htFallbacks;var testEle=document.createElement("div");function isSupported(a){var d=testEle.style,b;for(i=0;i<a.length;i++)if(b=a[i],void 0!==d[b])return!0;return!1}function supportsRGBA(){testEle.cssText="background-color:rgba(150,255,150,.5)";return 0==(""+testEle.style.backgroundColor).indexOf("rgba")?!0:!1}
-var hasTransform=isSupported(["transformProperty","WebkitTransform","MozTransform","OTransform","msTransform"]),hasSVG=!!document.createElementNS&&!!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect,hasRGBA=supportsRGBA(),hasJSON=window.JSON&&window.JSON.parse&&window.JSON.stringify,readyToPlay=!1;function safeColor(a){a=""+a;if(!hasRGBA&&0==a.indexOf("rgba")){var d=a.lastIndexOf(",");0<d&&(a="rgb("+a.substring(5,d)+")")}return a}
-AdobeEdge._preloaders=AdobeEdge._preloaders||[];AdobeEdge._preloaders.push(function(){filesToLoad&&(loadResources(filesToLoad),filesToLoad=void 0)});function doLoadResources(){for(var a=0;a<AdobeEdge._preloaders.length;a++)AdobeEdge._preloaders[a]()}AdobeEdge._readyplayers=AdobeEdge._readyplayers||[];AdobeEdge._readyplayers.push(function(){readyToPlay&&AdobeEdge.okToLaunchComposition(compId)});function playWhenReady(){AdobeEdge._playWhenReady=!0;for(var a=0;a<AdobeEdge._readyplayers.length;a++)AdobeEdge._readyplayers[a]()}function edgeCallback(a,d,b){htFallbacks[a]&&(a=htFallbacks[a]);AdobeEdge.preload.got[a]=!0;a==AdobeEdge.preload.last&&(!AdobeEdge.bootstrapLoading||AdobeEdge._playWhenReady?AdobeEdge.okToLaunchComposition(compId):readyToPlay=!0,AdobeEdge.preload.busy=!1,0<AdobeEdge.preload.q.length&&(a=AdobeEdge.preload.q.pop(),AdobeEdge.requestResources(a.files,a.callback)))}
-AdobeEdge.requestResources=AdobeEdge.requestResources||function(a,d){AdobeEdge.yepnope.errorTimeout=4E3;AdobeEdge.preload.busy=!0;AdobeEdge.preload.got=AdobeEdge.preload.got||{};var b,k=a.length,f=[],c;for(b=0;b<k;b++){c=a[b];if("string"===typeof c)0===c.indexOf("//")&&0===window.location.href.indexOf("file://")&&(c="http:"+c),url=c,c={load:url};else if(c.load&&0===c.load.indexOf("//")&&0===window.location.href.indexOf("file://")&&(c.load="http:"+c.load),url=c.yep||c.load,c.callback){var g=c.callback;c.callback=function(a,b,c){g(a,b,c)&&d(a,b,c)}}c.callback||(c.callback=d);AdobeEdge.preload.got[url]||(f.push(c),AdobeEdge.preload.last=url)}f.length&&AdobeEdge.yepnope(f)};var filesToLoad,dlContent,preContent,doDelayLoad,signaledLoading,loadingEvt,requiresSVG,htLookup={},aLoader,aEffectors,plSTF,ctrPlS,minPlW,maxPlW,plHeight,plWidth;function loadResources(a,d){AdobeEdge.preload=AdobeEdge.preload||[];AdobeEdge.preload.q=AdobeEdge.preload.q||[];d||!isCapable()?filesToLoad=a:AdobeEdge.preload.busy?AdobeEdge.preload.q.push({files:a,callback:edgeCallback}):AdobeEdge.requestResources(a,edgeCallback)}function splitUnits(a){var d={};d.num=parseFloat(a);"string"==typeof a&&(d.units=a.match(/[a-zA-Z%]+$/));d.units&&"object"==typeof d.units&&(d.units=d.units[0]);return d}
-function defaultUnits(a){var d=a;"auto"!==a&&((a=splitUnits(a))&&a.units||(d+="px"));return d}function findNWC(a,d){if(-1!=String(a.className).indexOf(d))return a;for(var b=a.childNodes,k=0;k<b.length;k++){var f=findNWC(b[k],d);if(!1!=f)return f}return!1}function parent(a){return a.parentElement}function offset(a){a=a.getBoundingClientRect();return{left:a.left+window.pageXOffset,top:a.top+window.pageYOffset}}function width(a){return a.offsetWidth}function height(a){return a.offsetHeight}
-function isWrapped(a){return/center-wrapper/.test(parent(a).className)}function wrapForStageScaling(a){if(!isWrapped(a)){var d=document.createElement("div"),b=document.createElement("div");d.className="flow-wrapper";b.className="center-wrapper";d.style.width="1px";d.appendChild(b);parent(a).insertBefore(d,a);b.appendChild(a)}}
-function bindPSS(a,d){if(!isWrapped(a)){var b=function(){var b=isWrapped(a),f=b?parent(parent(parent(a))):parent(a),c=width(f),g=height(f),h=width(a),n=height(a),m=window.innerHeight,e=1,l=a.style;(f="body"===f.nodeName.toLowerCase())&&(g=m);c=Math.round(c);g=Math.round(g);c/=h;g/=n;"both"===d?e=Math.min(c,g):"height"===d?e=g:"width"===d&&(e=c);void 0!==maxPlW&&(e=Math.min(e,parseInt(maxPlW,10)/h));void 0!==minPlW&&(e=Math.max(e,parseInt(minPlW,10)/h));g="scale("+e+")";l.transformOrigin="0 0";l.oTransformOrigin="0 0";l.msTransformOrigin="0 0";l.webkitTransformOrigin="0 0";l.mozTransformOrigin="0 0";l.oTransformOrigin="0 0";l.transform=g;l.oTransform=g;l.msTransform=g;l.webkitTransform=g;l.mozTransform=g;l.oTransform=g;if(!f||b)parent(a).style.height=Math.round(n*e)+"px",parent(a).style.width=Math.round(h*e)+"px";b&&(b=parent(parent(a)),b.style.height=Math.round(n*e+offset(a).top-offset(b).top))};wrapForStageScaling(a);window.addEventListener("resize",function(){b()});b()}}
-function centerThePreloadStage(a,d){isWrapped(a)&&(a=parent(a));var b=a.style;/^both$|^horizontal$/.test(d)&&(b.position="absolute",b.marginLeft="auto",b.marginRight="auto",b.left="0",b.right="0");/^both$|^vertical$/.test(d)&&(b.position="absolute",b.marginTop="auto",b.marginBottom="auto",b.top="0",b.bottom="0")}
-function simpleContent(a,d,b){var k=document.getElementsByTagName("body")[0],f=b||findNWC(k,compId),c,g,h;f?"absolute"!=f.style.position&&"relative"!=f.style.position&&(f.style.position="relative"):f=k;plHeight&&(f.style.height=plHeight);plWidth&&(f.style.width=plWidth);/^height$|^width$|^both$/.test(plSTF)&&d&&!b&&bindPSS(f,plSTF);/^vertical$|^horizontal$|^both$/.test(ctrPlS)&&d&&!b&&centerThePreloadStage(f,ctrPlS);for(var n=0;n<a.length;n++){b=a[n];"image"===b.type?(k=document.createElement("img"),k.src=b.fill[1]):k=document.createElement("div");k.id=b.id;h=k.style;if("text"==b.type){if(c=b.font)c[0]&&""!==c[0]&&(h.fontFamily=c[0]),"object"!=typeof c[1]&&(c[1]=[c[1]]),c[1][1]||(c[1][1]="px"),c[1][0]&&""!==c[1][0]&&(h.fontSize=c[1][0]+c[1][1]),c[2]&&""!==c[2]&&(h.color=safeColor(c[2])),c[3]&&""!==c[3]&&(h.fontWeight=c[3]),c[4]&&""!==c[4]&&(h.textDecoration=b.font[4]),c[5]&&""!==c[5]&&(h.fontStyle=b.font[5]);b.align&&"auto"!=b.align&&(h.textAlign=b.align);b.position&&(h.position=b.position);(!b.rect[2]||0>=b.rect[2])&&(!b.rect[3]||0>=b.rect[3])&&(h.whiteSpace="nowrap");k.innerHTML=b.text}d&&(k.className=d);h.position="absolute";c=b.rect[0];g=b.rect[1];if(b.transform&&b.transform[0]){var m=b.transform[0][0],e=splitUnits(m);if(e&&e.units&&(m=e.num,"%"==e.units&&b.rect[2])){var e=b.rect[2],l=splitUnits(b.rect[2]);l&&l.units&&(e=l.num,"%"==l.units&&(e=e/100*f.offsetWidth));m=m/100*e;0<f.offsetWidth&&(m=m/f.offsetWidth*100)}if(e=splitUnits(c))c=e.num;c+=m;e.units||(e.units="px");c+=e.units;if(1<b.transform[0].length){m=b.transform[0][1];(e=splitUnits(m))&&e.units&&(m=e.num,"%"==e.units&&b.rect[3]&&(e=b.rect[3],(l=splitUnits(b.rect[3]))&&l.units&&(e=l.num,"%"==l.units&&(e=e/100*f.offsetHeight)),m=m/100*e,0<f.offsetHeight&&(m=m/f.offsetHeight*100)));if(e=splitUnits(g))g=e.num;g+=m;e.units||(e.units="px");g+=e.units}}h.left=defaultUnits(c);h.top=defaultUnits(g);h.width=defaultUnits(b.rect[2]);h.height=defaultUnits(b.rect[3]);b.linkURL&&(htLookup[k.id]=b,k.onclick=function(){var a=htLookup[this.id];a.linkTarget?window.open(a.linkURL,a.linkTarget):window.location.href=a.linkURL},h.cursor="pointer");f.appendChild(k);if(b.c)for(h=0;h<b.c.length;h++)simpleContent(b.c[h],d,k)}}var fnCycle=function(a){a?fnCycle&&setTimeout(fnCycle,20):a={event:"loading",progress:0};loadingEvt&&loadingEvt(a)},aBootcompsLoaded=[];window.AdobeEdge.bootstrapListeners||(window.AdobeEdge.bootstrapListeners=[]);window.AdobeEdge.bootstrapCallback=function(a){window.AdobeEdge.bootstrapListeners.push(a);if(0<aBootcompsLoaded.length)for(var d=0;d<aBootcompsLoaded.length;d++)a(aBootcompsLoaded[d])};window.AdobeEdge.preloadComplete||(window.AdobeEdge.preloadComplete={});window.AdobeEdge.preloadComplete[compId]=function(a){AdobeEdge.$_(".edgePreload"+a).css("display","none");fnCycle=null;loadingEvt&&loadingEvt({event:"done",progress:1,reason:"complete"});aBootcompsLoaded.push(a);for(var d=window.AdobeEdge.bootstrapListeners.length,b=0;b<d;b++)try{window.AdobeEdge.bootstrapListeners[b](a)}catch(k){console.log("bootstrap error "+k)}};function isCapable(){return hasTransform?requiresSVG&&!hasSVG?!1:!0:!1}
-function onDocLoaded(a){window.AdobeEdge.loaded=!0;fnCycle({event:"begin"});isCapable()?(preContent&&preContent.dom&&preContent.dom.length&&simpleContent(preContent.dom,"edgePreload"+compId),filesToLoad&&!signaledLoading&&(loadResources(filesToLoad),filesToLoad=void 0)):dlContent&&dlContent.dom&&(loadingEvt&&loadingEvt({event:"done",progress:1,reason:"downlevel"}),simpleContent(dlContent.dom))};window.AdobeEdge=window.AdobeEdge||{};window.AdobeEdge.framework='jquery';if(document.addEventListener){window.addEventListener("load",onDocLoaded,false);}else if(document.attachEvent){window.attachEvent("onload",onDocLoaded);}
-requiresSVG=true;doDelayLoad=false;htFallbacks={"edge_includes/jquery-2.0.3.min.js":"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js","edge_includes/edge.3.0.0.min.js":"//animate.adobe.com/runtime/3.0.0/edge.3.0.0.min.js"};aLoader=[{load:"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js",callback:function(result,key){if(!window.jQuery){yepnope({load:"edge_includes/jquery-2.0.3.min.js",callback:edgeCallback});return false;}return true;}},{load:"//animate.adobe.com/runtime/3.0.0/edge.3.0.0.min.js",callback:function(result,key){if(!window.AdobeEdge){yepnope({load:"edge_includes/edge.3.0.0.min.js",callback:edgeCallback});return false;}return true;}},{load:"{% static 'QUIENES%20SOMOS2_edge.js' %}"},{load:"{% static 'QUIENES%20SOMOS2_edgeActions.js' %}"}];if(AdobeEdge.bootstrapLoading){signaledLoading=true;AdobeEdge.loadResources=doLoadResources;AdobeEdge.playWhenReady=playWhenReady;}
-loadResources(aLoader,doDelayLoad);var plSTF="width",ctrPlS="horizontal",minPlW="0",maxPlW=undefined,plWidth="1920px",plHeight="650px";preContent={dom:[]};
-//simpleContent
-dlContent={dom:[]};
-//simpleContent
-})("EDGE-38250192");
-</script>
-
+ <script src='http://spin.js.org/spin.min.js'></script>
 
 
 
@@ -924,6 +845,49 @@ dlContent={dom:[]};
   blueimp.Gallery(links, options);
 
 };
+</script>
+
+
+
+<script>
+   function activadiseno(){
+
+    document.getElementById('h2diseno').style.backgroundColor="#E20079";
+    document.getElementById('h2diseno').style.color="white";
+    document.getElementById('h2marketing').style.backgroundColor="white";
+    document.getElementById('h2marketing').style.color="#6F7072";
+    document.getElementById('h2imagen').style.backgroundColor="white";    
+    document.getElementById('h2imagen').style.color="#6F7072"; 
+
+
+
+
+   }
+
+    function activamarketing(){
+
+    document.getElementById('h2diseno').style.backgroundColor="white";
+    document.getElementById('h2diseno').style.color="#6F7072";
+    document.getElementById('h2marketing').style.backgroundColor="#E20079";
+    document.getElementById('h2marketing').style.color="white";
+    document.getElementById('h2imagen').style.backgroundColor="white";    
+    document.getElementById('h2imagen').style.color="#6F7072";    
+
+   } 
+
+
+   function activaimagen(){
+
+    document.getElementById('h2diseno').style.backgroundColor="white";
+    document.getElementById('h2diseno').style.color="#6F7072";
+    document.getElementById('h2marketing').style.backgroundColor="white";
+    document.getElementById('h2marketing').style.color="#6F7072";
+    document.getElementById('h2imagen').style.backgroundColor="#E20079";    
+    document.getElementById('h2imagen').style.color="white";    
+
+   }
+
+
 </script>
 
 
@@ -971,22 +935,89 @@ dlContent={dom:[]};
       );
     });
 
-    $(document).ready(function(){
-      $('#captions .bx-viewport').css({
-        'overflow':'visible',
-      }
-
-        )
-    });
-
-
-
     
 
   </script>
 
 
+    <script>
 
+
+
+        $('#js_contacto_page').on('submit', function(e){
+        console.log('Mande el Formulario')
+        e.preventDefault()
+
+        var pet = $('#js_contacto_page').attr('action')
+        console.log(pet)
+        var met = $('#js_contacto_page').attr('method')
+        console.log(met)
+
+        $.ajax({
+          beforeSend: function(){
+            var opts = {
+              radius:10,
+              width:10,
+              height:10,
+              lenght:10,
+            }
+            var target = document.getElementById('js_load_response')
+            var spinner = new Spinner(opts).spin(target)
+          
+
+          },
+          url: pet,
+          type: met,
+          data: $('#js_contacto_page').serialize(), 
+          success: function(resp){
+            $('#js_load_response').html('<img class="img-responsive" style="max-height:100%; margin:auto;" src="{% static "img/ok.png" %}">')
+            $('#js_load_response').append('<h2>'+resp+'</h2>')
+            console.log(data)
+            console.log(resp)
+          }, 
+          error: function(jqXHR, estado, error){
+            $('#js_load_response').html('<img class="img-responsive" style="max-height:100%;" src="{% static "img/x.png" %}">')
+            console.log(error)
+            // document.write(error)
+          },
+          complete: function(jqXHR, estado){
+            console.log(estado)
+          },
+          timeout: 10000    
+      })
+
+
+      })
+
+
+  </script>
+
+  <script>
+    
+window.AdobeEdge=window.AdobeEdge||{};
+if(!AdobeEdge.yepnope){(function(a,b,c){function d(a)
+  {return"[object Function]"==o.call(a)}function e(a)
+  {return"string"==typeof a}function f(){}function g(a)
+  {return!a||"loaded"==a||"complete"==a||"uninitialized"==a}
+  function h(){var a=p.shift();q=1,a?a.t?m(function()
+    {("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);AdobeEdge.yepnope=window.yepnope;}
+(function(compId){var htFallbacks;var testEle=document.createElement("div");function isSupported(a){var d=testEle.style,b;for(i=0;i<a.length;i++)if(b=a[i],void 0!==d[b])return!0;return!1}function supportsRGBA(){testEle.cssText="background-color:rgba(150,255,150,.5)";return 0==(""+testEle.style.backgroundColor).indexOf("rgba")?!0:!1}
+var hasTransform=isSupported(["transformProperty","WebkitTransform","MozTransform","OTransform","msTransform"]),hasSVG=!!document.createElementNS&&!!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect,hasRGBA=supportsRGBA(),hasJSON=window.JSON&&window.JSON.parse&&window.JSON.stringify,readyToPlay=!1;function safeColor(a){a=""+a;if(!hasRGBA&&0==a.indexOf("rgba")){var d=a.lastIndexOf(",");0<d&&(a="rgb("+a.substring(5,d)+")")}return a}
+AdobeEdge._preloaders=AdobeEdge._preloaders||[];AdobeEdge._preloaders.push(function(){filesToLoad&&(loadResources(filesToLoad),filesToLoad=void 0)});function doLoadResources(){for(var a=0;a<AdobeEdge._preloaders.length;a++)AdobeEdge._preloaders[a]()}AdobeEdge._readyplayers=AdobeEdge._readyplayers||[];AdobeEdge._readyplayers.push(function(){readyToPlay&&AdobeEdge.okToLaunchComposition(compId)});function playWhenReady(){AdobeEdge._playWhenReady=!0;for(var a=0;a<AdobeEdge._readyplayers.length;a++)AdobeEdge._readyplayers[a]()}function edgeCallback(a,d,b){htFallbacks[a]&&(a=htFallbacks[a]);AdobeEdge.preload.got[a]=!0;a==AdobeEdge.preload.last&&(!AdobeEdge.bootstrapLoading||AdobeEdge._playWhenReady?AdobeEdge.okToLaunchComposition(compId):readyToPlay=!0,AdobeEdge.preload.busy=!1,0<AdobeEdge.preload.q.length&&(a=AdobeEdge.preload.q.pop(),AdobeEdge.requestResources(a.files,a.callback)))}
+AdobeEdge.requestResources=AdobeEdge.requestResources||function(a,d){AdobeEdge.yepnope.errorTimeout=4E3;AdobeEdge.preload.busy=!0;AdobeEdge.preload.got=AdobeEdge.preload.got||{};var b,k=a.length,f=[],c;for(b=0;b<k;b++){c=a[b];if("string"===typeof c)0===c.indexOf("//")&&0===window.location.href.indexOf("file://")&&(c="http:"+c),url=c,c={load:url};else if(c.load&&0===c.load.indexOf("//")&&0===window.location.href.indexOf("file://")&&(c.load="http:"+c.load),url=c.yep||c.load,c.callback){var g=c.callback;c.callback=function(a,b,c){g(a,b,c)&&d(a,b,c)}}c.callback||(c.callback=d);AdobeEdge.preload.got[url]||(f.push(c),AdobeEdge.preload.last=url)}f.length&&AdobeEdge.yepnope(f)};var filesToLoad,dlContent,preContent,doDelayLoad,signaledLoading,loadingEvt,requiresSVG,htLookup={},aLoader,aEffectors,plSTF,ctrPlS,minPlW,maxPlW,plHeight,plWidth;function loadResources(a,d){AdobeEdge.preload=AdobeEdge.preload||[];AdobeEdge.preload.q=AdobeEdge.preload.q||[];d||!isCapable()?filesToLoad=a:AdobeEdge.preload.busy?AdobeEdge.preload.q.push({files:a,callback:edgeCallback}):AdobeEdge.requestResources(a,edgeCallback)}function splitUnits(a){var d={};d.num=parseFloat(a);"string"==typeof a&&(d.units=a.match(/[a-zA-Z%]+$/));d.units&&"object"==typeof d.units&&(d.units=d.units[0]);return d}
+function defaultUnits(a){var d=a;"auto"!==a&&((a=splitUnits(a))&&a.units||(d+="px"));return d}function findNWC(a,d){if(-1!=String(a.className).indexOf(d))return a;for(var b=a.childNodes,k=0;k<b.length;k++){var f=findNWC(b[k],d);if(!1!=f)return f}return!1}function parent(a){return a.parentElement}function offset(a){a=a.getBoundingClientRect();return{left:a.left+window.pageXOffset,top:a.top+window.pageYOffset}}function width(a){return a.offsetWidth}function height(a){return a.offsetHeight}
+function isWrapped(a){return/center-wrapper/.test(parent(a).className)}function wrapForStageScaling(a){if(!isWrapped(a)){var d=document.createElement("div"),b=document.createElement("div");d.className="flow-wrapper";b.className="center-wrapper";d.style.width="1px";d.appendChild(b);parent(a).insertBefore(d,a);b.appendChild(a)}}
+function bindPSS(a,d){if(!isWrapped(a)){var b=function(){var b=isWrapped(a),f=b?parent(parent(parent(a))):parent(a),c=width(f),g=height(f),h=width(a),n=height(a),m=window.innerHeight,e=1,l=a.style;(f="body"===f.nodeName.toLowerCase())&&(g=m);c=Math.round(c);g=Math.round(g);c/=h;g/=n;"both"===d?e=Math.min(c,g):"height"===d?e=g:"width"===d&&(e=c);void 0!==maxPlW&&(e=Math.min(e,parseInt(maxPlW,10)/h));void 0!==minPlW&&(e=Math.max(e,parseInt(minPlW,10)/h));g="scale("+e+")";l.transformOrigin="0 0";l.oTransformOrigin="0 0";l.msTransformOrigin="0 0";l.webkitTransformOrigin="0 0";l.mozTransformOrigin="0 0";l.oTransformOrigin="0 0";l.transform=g;l.oTransform=g;l.msTransform=g;l.webkitTransform=g;l.mozTransform=g;l.oTransform=g;if(!f||b)parent(a).style.height=Math.round(n*e)+"px",parent(a).style.width=Math.round(h*e)+"px";b&&(b=parent(parent(a)),b.style.height=Math.round(n*e+offset(a).top-offset(b).top))};wrapForStageScaling(a);window.addEventListener("resize",function(){b()});b()}}
+function centerThePreloadStage(a,d){isWrapped(a)&&(a=parent(a));var b=a.style;/^both$|^horizontal$/.test(d)&&(b.position="absolute",b.marginLeft="auto",b.marginRight="auto",b.left="0",b.right="0");/^both$|^vertical$/.test(d)&&(b.position="absolute",b.marginTop="auto",b.marginBottom="auto",b.top="0",b.bottom="0")}
+function simpleContent(a,d,b){var k=document.getElementsByTagName("body")[0],f=b||findNWC(k,compId),c,g,h;f?"absolute"!=f.style.position&&"relative"!=f.style.position&&(f.style.position="relative"):f=k;plHeight&&(f.style.height=plHeight);plWidth&&(f.style.width=plWidth);/^height$|^width$|^both$/.test(plSTF)&&d&&!b&&bindPSS(f,plSTF);/^vertical$|^horizontal$|^both$/.test(ctrPlS)&&d&&!b&&centerThePreloadStage(f,ctrPlS);for(var n=0;n<a.length;n++){b=a[n];"image"===b.type?(k=document.createElement("img"),k.src=b.fill[1]):k=document.createElement("div");k.id=b.id;h=k.style;if("text"==b.type){if(c=b.font)c[0]&&""!==c[0]&&(h.fontFamily=c[0]),"object"!=typeof c[1]&&(c[1]=[c[1]]),c[1][1]||(c[1][1]="px"),c[1][0]&&""!==c[1][0]&&(h.fontSize=c[1][0]+c[1][1]),c[2]&&""!==c[2]&&(h.color=safeColor(c[2])),c[3]&&""!==c[3]&&(h.fontWeight=c[3]),c[4]&&""!==c[4]&&(h.textDecoration=b.font[4]),c[5]&&""!==c[5]&&(h.fontStyle=b.font[5]);b.align&&"auto"!=b.align&&(h.textAlign=b.align);b.position&&(h.position=b.position);(!b.rect[2]||0>=b.rect[2])&&(!b.rect[3]||0>=b.rect[3])&&(h.whiteSpace="nowrap");k.innerHTML=b.text}d&&(k.className=d);h.position="absolute";c=b.rect[0];g=b.rect[1];if(b.transform&&b.transform[0]){var m=b.transform[0][0],e=splitUnits(m);if(e&&e.units&&(m=e.num,"%"==e.units&&b.rect[2])){var e=b.rect[2],l=splitUnits(b.rect[2]);l&&l.units&&(e=l.num,"%"==l.units&&(e=e/100*f.offsetWidth));m=m/100*e;0<f.offsetWidth&&(m=m/f.offsetWidth*100)}if(e=splitUnits(c))c=e.num;c+=m;e.units||(e.units="px");c+=e.units;if(1<b.transform[0].length){m=b.transform[0][1];(e=splitUnits(m))&&e.units&&(m=e.num,"%"==e.units&&b.rect[3]&&(e=b.rect[3],(l=splitUnits(b.rect[3]))&&l.units&&(e=l.num,"%"==l.units&&(e=e/100*f.offsetHeight)),m=m/100*e,0<f.offsetHeight&&(m=m/f.offsetHeight*100)));if(e=splitUnits(g))g=e.num;g+=m;e.units||(e.units="px");g+=e.units}}h.left=defaultUnits(c);h.top=defaultUnits(g);h.width=defaultUnits(b.rect[2]);h.height=defaultUnits(b.rect[3]);b.linkURL&&(htLookup[k.id]=b,k.onclick=function(){var a=htLookup[this.id];a.linkTarget?window.open(a.linkURL,a.linkTarget):window.location.href=a.linkURL},h.cursor="pointer");f.appendChild(k);if(b.c)for(h=0;h<b.c.length;h++)simpleContent(b.c[h],d,k)}}var fnCycle=function(a){a?fnCycle&&setTimeout(fnCycle,20):a={event:"loading",progress:0};loadingEvt&&loadingEvt(a)},aBootcompsLoaded=[];window.AdobeEdge.bootstrapListeners||(window.AdobeEdge.bootstrapListeners=[]);window.AdobeEdge.bootstrapCallback=function(a){window.AdobeEdge.bootstrapListeners.push(a);if(0<aBootcompsLoaded.length)for(var d=0;d<aBootcompsLoaded.length;d++)a(aBootcompsLoaded[d])};window.AdobeEdge.preloadComplete||(window.AdobeEdge.preloadComplete={});window.AdobeEdge.preloadComplete[compId]=function(a){AdobeEdge.$_(".edgePreload"+a).css("display","none");fnCycle=null;loadingEvt&&loadingEvt({event:"done",progress:1,reason:"complete"});aBootcompsLoaded.push(a);for(var d=window.AdobeEdge.bootstrapListeners.length,b=0;b<d;b++)try{window.AdobeEdge.bootstrapListeners[b](a)}catch(k){console.log("bootstrap error "+k)}};function isCapable(){return hasTransform?requiresSVG&&!hasSVG?!1:!0:!1}
+function onDocLoaded(a){window.AdobeEdge.loaded=!0;fnCycle({event:"begin"});isCapable()?(preContent&&preContent.dom&&preContent.dom.length&&simpleContent(preContent.dom,"edgePreload"+compId),filesToLoad&&!signaledLoading&&(loadResources(filesToLoad),filesToLoad=void 0)):dlContent&&dlContent.dom&&(loadingEvt&&loadingEvt({event:"done",progress:1,reason:"downlevel"}),simpleContent(dlContent.dom))};window.AdobeEdge=window.AdobeEdge||{};window.AdobeEdge.framework='jquery';if(document.addEventListener){window.addEventListener("load",onDocLoaded,false);}else if(document.attachEvent){window.attachEvent("onload",onDocLoaded);}
+requiresSVG=true;doDelayLoad=false;htFallbacks={"edge_includes/jquery-2.0.3.min.js":"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js","edge_includes/edge.3.0.0.min.js":"//animate.adobe.com/runtime/3.0.0/edge.3.0.0.min.js"};aLoader=[{load:"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js",callback:function(result,key){if(!window.jQuery){yepnope({load:"edge_includes/jquery-2.0.3.min.js",callback:edgeCallback});return false;}return true;}},{load:"//animate.adobe.com/runtime/3.0.0/edge.3.0.0.min.js",callback:function(result,key){if(!window.AdobeEdge){yepnope({load:"edge_includes/edge.3.0.0.min.js",callback:edgeCallback});return false;}return true;}},{load:"{% static 'js/quienes_somos_edge.js' %}"},{load:"{% static 'js/quienes_somos_edgeActions.js' %}"}];if(AdobeEdge.bootstrapLoading){signaledLoading=true;AdobeEdge.loadResources=doLoadResources;AdobeEdge.playWhenReady=playWhenReady;}
+loadResources(aLoader,doDelayLoad);var plSTF="width",ctrPlS="horizontal",minPlW="0",maxPlW=undefined,plWidth="1920px",plHeight="650px";preContent={dom:[]};
+//simpleContent
+dlContent={dom:[]};
+//simpleContent
+})("EDGE-38250192");
+  </script>
 
 
 </body>

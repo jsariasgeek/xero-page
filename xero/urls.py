@@ -19,6 +19,6 @@ import website.views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'website.views.home', name='home'),
-    url(r'^contacto', 'website.views.contacto', name='contacto'),  
+    url(r'^$', website.views.home, name='home'),
+    url(r'^contacto', website.views.contacto, name='contacto'),  
 ]
